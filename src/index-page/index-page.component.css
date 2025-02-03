@@ -1,0 +1,65 @@
+/* Remove padding and margin from body */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding is included in the width/height calculations */
+}
+
+/* Navbar */
+.navbar {
+    height: 60px; /* Adjust the height to match your navbar */
+    width: 100vw;
+    background-color: #333; /* Example background color */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem; /* Adjust padding for navbar content */
+}
+
+/* Full width container */
+.container {
+    display: flex; /* Side-by-side layout */
+    gap: 2rem; /* Space between job cards and details */
+    height: calc(100vh - 60px); /* Full height minus navbar height */
+    padding: 0;
+    margin: 0;
+    width: 100vw; /* Ensure the container takes the full width of the viewport */
+    margin-top: 60px; /* Space below navbar */
+}
+
+/* Left column (Job cards) with scroll */
+.card-container {
+    display: flex;
+    flex-direction: column; /* Stack the cards vertically */
+    gap: 1rem; /* Space between the cards */
+    flex: 1; /* Keep proportional width */
+    max-height: 100%; /* Use all available height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    margin: 0; /* Remove extra margins */
+    border-right: 1px solid #ddd; /* Optional: add a border to separate columns */
+}
+
+/* Card Styling */
+.card {
+    width: 100%; /* Full width of the container */
+    max-width: 25rem; /* Optional: set max width */
+    border: 1px solid #dddddd; /* Adds a light border to the card */
+    border-radius: 4px; /* Slightly round the card edges */
+    text-align: center;
+    padding: 15px;
+    background-color: #fff; /* Ensure a consistent card background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for visual effect */
+}
+
+/* Right column (Expanded Job Details) */
+.expanded-card {
+    flex: 2; /* Make the expanded-card section take up more width */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0; /* Remove extra margins */
+    background: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for visual effect */
+}

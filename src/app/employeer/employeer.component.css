@@ -1,0 +1,7 @@
+.container {
+    display: flex;
+    justify-content: center;  /* Centers the form horizontally */
+    align-items: center;      /* Centers the form vertically */
+    height: 100vh;            /* Full height of the viewport */
+    flex-direction: column;   /* Ensures form elements are stacked */
+}
